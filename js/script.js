@@ -7,7 +7,7 @@ console.log(km)
 console.log(age)
 
 //controllo che i dati inseriti siano dei numeri
-if (typeof age != 'number' || typeof km != 'number') {
+if (isNaN(age) || isNaN(km)) {
     alert('I dati devono essere inseriti come numeri')
 } else {
     //calcolo il prezzo del biglietto
